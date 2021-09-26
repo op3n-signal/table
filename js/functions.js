@@ -66,7 +66,7 @@ export function loopMe(arr, start, content = undefined) {
         if (content == headingDetails)
             arr[i].innerHTML += `
             <h6 style="font-size: 16px; margin-top: 15px;">${content[i - 1].plan}</h6>
-            <span class="gray" style="font-size: 26px; font-weight: bolder;">${content[i - 1].price}</span>
+            <span class="gray" style="font-size: 26px; font-weight: bolder; margin-top: 4px;">${content[i - 1].price}</span>
             <span class="gray" style="font-size: 10px;">${content[0].billTime}</span>
             <button class="btn btn-primary btn-${i}">Buy ${content[i - 1].type}</button>`;
         else {
