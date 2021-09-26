@@ -65,7 +65,7 @@ export function loopMe(arr, start, content = undefined) {
     for (let i = start; i < arr.length; i++) {
         if (content == headingDetails)
             arr[i].innerHTML += `
-            <h6 style="margin-top: 15px;">${content[i - 1].plan}</h6>
+            <h6 style="font-size: 16px; margin-top: 15px;">${content[i - 1].plan}</h6>
             <span class="gray" style="font-size: 26px; font-weight: bolder;">${content[i - 1].price}</span>
             <span class="gray" style="font-size: 10px;">${content[0].billTime}</span>
             <button class="btn btn-primary btn-${i}">Buy ${content[i - 1].type}</button>`;
@@ -91,7 +91,7 @@ export const isButtonClicked = (event) => {
         for (let j = 0; j < allElements.length; j++) {
             for (let z = 0; z < listDetails[index][0].length; z++) {
                 let node = document.createElement('div');
-                node.innerHTML = '<span class="truncate">' + listDetails[index][j][z] + '</span>';
+                node.innerHTML = listDetails[index][j][z];
                 allElements[j].lastChild.previousSibling.appendChild(node);
             }
         }
