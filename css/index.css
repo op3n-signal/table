@@ -1,0 +1,167 @@
+/*global*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*reusables*/
+.align {
+    text-align: center;
+}
+
+.gray {
+    color:gray;
+}
+
+/*containers*/
+.container-fluid {
+    background: rgb(235, 235, 235);
+    min-height: 100vh;
+    padding: 100px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table-container {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    min-width: 985px;
+}
+
+.header,
+.general,
+.funnel,
+.product,
+.member,
+.list,
+.blog,
+.affiliate,
+.support,
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: rgb(235, 235, 235);
+}
+
+.heading-box, 
+.general-box,
+.funnel-box,
+.product-box,
+.member-box,
+.list-box,
+.blog-box,
+.affiliate-box,
+.support-box,
+.footer-box {
+    flex: 1;
+    background: white;
+}
+
+.heading-box, .footer-box {
+    margin: 0 1px;
+}
+
+.section {
+    margin: 1px;
+}
+
+.box {
+    flex-direction: column !important;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+/*heading area*/
+.heading {
+    border-bottom: solid 1px rgb(243, 243, 243);
+}
+
+.heading-box {
+    height: 175px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.heading-row {
+    text-align: center;
+    display: flex;
+}
+
+/*buttons*/
+.btn {
+    border: unset !important;
+    margin: 20px auto !important;
+    min-width: 150px;
+    font-weight: bolder !important;
+}
+
+.button-here, .heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-1 {
+    background: rgba(91, 45, 129, 0.678) !important;
+}
+
+.btn-2, .deal {
+    background: rgba(159, 206, 50, 0.87) !important;
+}
+
+.btn-3 {
+    background: steelblue !important;
+}
+
+/* deal icon*/
+.spacer, .deal {
+    flex: 1;
+}
+
+.deal {
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*main-sections*/
+.section, .box {
+    background: rgb(241, 241, 241);
+}
+
+/* btn dropdowns */
+.list-heading {
+    cursor: pointer;
+    padding-left: 42px !important; 
+}
+
+/* Lists */
+.drop-list {
+    flex-direction: column;
+}
+
+.drop-list div {
+    background: white;
+    margin: 2px 1px;
+    padding: 10px 40px;
+    font-weight: normal;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.static {
+    padding: 12px 0px;
+    background: rgb(248, 248, 248);
+}
+
+
+
+
+
