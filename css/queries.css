@@ -1,3 +1,5 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 @media(max-width: 1020px) {
     .table-container {
         width: 100%;
