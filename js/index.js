@@ -3,7 +3,7 @@
 import * as functions from './functions.js';
 import * as switchMe from './switcharoo.js';
 
-(function() {
+/* (function() { */
     const allHeadings = document.querySelectorAll('.heading-box');
     const allButtonAreas = document.querySelectorAll('.button-here');
 
@@ -20,6 +20,6 @@ import * as switchMe from './switcharoo.js';
     document.addEventListener('click', functions.isButtonClicked);
     // listening for the previous or next button click
     document.addEventListener('click', switchMe.isSwitched);
-})();
+/* })(); */
 
 
