@@ -1,5 +1,3 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
 /*global*/
 * {
     padding: 0;
@@ -13,8 +11,12 @@
     text-align: center;
 }
 
-.gray {
-    color:gray;
+.container-fluid, 
+.heading-box,
+.button-here,
+.heading {
+    display: flex;
+    flex-direction: column;
 }
 
 /*containers*/
@@ -22,8 +24,6 @@
     background: rgb(235, 235, 235);
     min-height: 100vh;
     padding: 100px 0; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -85,8 +85,6 @@
 .heading-box {
     height: 175px !important;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     align-self: flex-end;
     justify-content: center;
     align-content: center;
@@ -111,11 +109,6 @@
     padding: 9px !important;
     color: white !important;
     border-radius: 5px !important;
-}
-
-.button-here, .heading {
-    display: flex;
-    flex-direction: column;
 }
 
 .btn-1 {
