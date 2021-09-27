@@ -2,6 +2,7 @@ const planClassNames = ['un', 'deux', 'trois'];
 let currentIndex = 1;
 let currentClass;
 
+//function when checks which button was pressed & chooses what class names to show/remove
 export const isSwitched = (event) => {
     let btn;
     if(event.target.closest('button')) {
@@ -34,6 +35,7 @@ export const isSwitched = (event) => {
     window.addEventListener('resize', reset);
 }
 
+//listener function for resizing, this resets all plans when resized to a larger width
 const reset = (event) => {
     let width = event.target.innerWidth;
     if(width > 821) {
